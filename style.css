@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+body{
+    height:100vh;
+    width:100vw;
+    position:relative;
+}
+.container{
+    height: 100%;
+    width:100%;
+    display: grid;
+    grid-template-rows:repeat(4,1fr);
+    grid-template-columns: repeat(14,1fr);
+}
+
+.udiv{
+    background-image: url('./assets/DeWatermark.ai_1727609940767.png');
+    background-position: center;
+    background-size: cover;
+    grid-row: 1/3;
+    grid-column: 1/15;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.ldiv1{
+    background-color:white;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ldiv1 h1{
+    font-size: 1.5rem;
+    color: grey;
+}
+.ldiv1 p{
+    line-height: 4vh;
+    color: rgb(47, 44, 44);
+}
+.ldiv2{
+background-image: url("./assets/pexels-gabby-k-6311332.jpg");
+background-size: cover;
+background-position: center;
+grid-row: 3/5;
+grid-column: 4/8;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.ldiv3{
+    background-color:rgb(255, 56, 0);
+    grid-row: 3/4;
+    grid-column: 8/11;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    color: white;
+    padding-left: 2vw;
+}
+.ldiv4{
+    background-image:url("./assets/leaf-7629114_1280.jpg") ;
+    background-size: cover;
+    background-position: center;
+    grid-row: 4/5;
+    grid-column: 8/11;
+}
+
+.ldiv5{
+    background-image:url('./assets/Screenshot\ 2024-09-29\ 173507.png');
+    background-size: cover;
+    background-position: center;
+    grid-row: 3/5;
+    grid-column:11/15;
+}
+.nav{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left:2vw ;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.icon{
+    height: 35px;
+    width:35px;
+    border-radius:50%;
+    background-color: rgb(255, 56, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.iconbox{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon1{
+    height: 35px;
+    width: 35px;
+    border-radius:50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(54, 54, 54);
+
+}
+.header{
+    height: 40%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header > h1{
+    color: white;
+    font-size: 5vw;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5vh;
+}
+.text1>h3{
+    color: white;
+
+}
+.header > .text1>p{
+    font-size: smaller;
+    color: white;
+}
+.media{
+    display: flex;
+    gap: 1.5vw;
+
+}
+.media>.fa-solid,.media>.fa-brands{
+    color: white;
+    font-size: larger;
+}
+.ldiv2>.fa-circle-play{
+    color: rgb(174, 171, 171);
+    font-size: 5rem;
+}
+@media (max-width:500px) {
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5,1fr);
+    }
+    .udiv{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .ldiv1{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .ldiv2{
+        grid-row:3/4 ;
+        grid-column: 2/3;
+    }.ldiv3{
+        grid-row:4/5 ;
+        grid-column: 1/2;
+    }
+    .ldiv4{
+        grid-row:4/5 ;
+        grid-column: 2/3;
+    }
+    .ldiv5{
+        grid-row: 5/6;
+        grid-column: 1/3;
+    }
+}
